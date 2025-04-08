@@ -1,0 +1,29 @@
+---
+const { left } = Astro.props;
+---
+
+<div
+  class={`absolute top-0 ${left ? "left-0" : "right-0"} w-1/2 h-auto bg-neutral-300 z-[-10] pointer-events-none`}
+>
+  <div
+    class={`absolute inset-0 z-30 w-full h-full ${left ? "bg-gradient-to-tl" : "bg-gradient-to-tr"} from-white from-50% via-90% to-100% via-transparent to-transparent`}
+  >
+  </div>
+  <div
+    class="flex h-full w-full flex-col divide-y divide-dashed divide-neutral-300 border-t border-l border-neutral-300"
+  >
+    {
+      Array(6)
+        .fill(0)
+        .map(() => (
+          <div class="relative flex h-[30px] w-full divide-x divide-dashed divide-neutral-300 sm:h-[45px] md:h-[60px] xl:h-[88px]">
+            {Array(9)
+              .fill(0)
+              .map(() => (
+                <div class="aspect-square h-auto w-full bg-white" />
+              ))}
+          </div>
+        ))
+    }
+  </div>
+</div>

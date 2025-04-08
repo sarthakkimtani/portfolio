@@ -1,5 +1,6 @@
 ---
-import NavIcon from "../components/NavIcon.astro";
+import Grid from "../components/Grid.astro";
+import Navbar from "../components/Navbar.astro";
 import "@fontsource-variable/figtree";
 
 const { title } = Astro.props;
@@ -14,18 +15,9 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="w-full overflow-x-hidden">
-    <nav class="flex items-center justify-center fixed w-full top-0 z-50">
-      <div
-        class="flex flex-row px-6 h-16 items-center justify-center bg-[#D6D6D6] rounded-full mt-6 drop-shadow-xl"
-      >
-        <NavIcon name="house" />
-        <NavIcon name="user" />
-        <NavIcon name="code" />
-        <NavIcon name="briefcase" />
-        <NavIcon name="pie-chart" />
-        <NavIcon name="mail" />
-      </div>
-    </nav>
+    <Grid left={true} />
+    <Grid left={false} />
+    <Navbar />
     <slot />
   </body>
 </html>

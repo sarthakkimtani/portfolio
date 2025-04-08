@@ -11,42 +11,49 @@ if (!heroContent) throw new Error("Could not find data");
 const { location, email, currently, previously, intro } = heroContent.data;
 ---
 
-<div class="flex flex-row items-end w-2/3 my-32 p-10">
-  <div class="flex flex-col w-1/2 mt-10">
+<section
+  class="mt-24 flex w-full flex-col-reverse items-center p-10 lg:my-32 lg:w-2/3 lg:flex-row lg:items-end"
+>
+  <div class="mt-20 flex w-full flex-col lg:w-1/2">
     <div class="flex flex-row items-center">
-      <Icon name="map" class="w-5 h-5 mr-1" />
+      <Icon name="map" class="mr-1 h-5 w-5" />
       <p class="text-base font-semibold">{location}</p>
     </div>
-    <div class="flex flex-row items-center mt-2">
-      <Icon name="mail" class="w-5 h-5 mr-2" />
-      <a href={`mailto:${email}`} class="text-base font-semibold underline hover:text-gray-500">
+    <div class="mt-2 flex flex-row items-center">
+      <Icon name="mail" class="mr-2 h-5 w-5" />
+      <a
+        href={`mailto:${email}`}
+        class="text-base font-semibold underline hover:text-gray-500"
+      >
         {email}
       </a>
     </div>
-    <div class="flex flex-col mt-14 font-semibold text-base">
-      <p class="text-gray-400 font-thin">CURRENTLY</p>
-      <div class="mt-2 text-black ml-2">
+    <div class="mt-14 flex flex-col text-base font-semibold">
+      <p class="font-thin text-gray-400">CURRENTLY</p>
+      <div class="mt-2 ml-2 text-black">
         {currently.map((item: string) => <p set:html={item} />)}
       </div>
     </div>
-    <div class="flex flex-col mt-14 font-semibold text-base">
-      <p class="text-gray-400 font-thin">PREVIOUSLY</p>
-      <div class="mt-2 text-black ml-2">
+    <div class="mt-14 flex flex-col text-base font-semibold">
+      <p class="font-thin text-gray-400">PREVIOUSLY</p>
+      <div class="mt-2 ml-2 text-black">
         {previously.map((item: string) => <p set:html={item} />)}
       </div>
     </div>
   </div>
-  <div class="flex flex-col w-1/2 items-start pl-16">
+  <div
+    class="flex w-full flex-col items-center pl-0 lg:w-1/2 lg:items-start lg:pl-16"
+  >
     <Image
       src={Profile}
       draggable={false}
       loading="eager"
       alt="Sarthak Kimtani"
-      class="rounded-[75px] h-60 w-60"
+      class="h-44 w-44 rounded-[75px] lg:h-60 lg:w-60"
     />
-    <h4 class="text-xl font-medium mt-14">
+    <h4 class="mt-14 text-center text-xl font-medium lg:text-left">
       I'm Sarthak Kimtani — Software Engineer
       <span class="text-gray-400"> {intro}</span>
     </h4>
   </div>
-</div>
+</section>

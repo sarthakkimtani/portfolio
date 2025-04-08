@@ -3,3 +3,7 @@
 @theme {
   --font-sans: "Figtree Variable", sans-serif;
 }
+
+:root {
+  scroll-behavior: smooth;
+}
