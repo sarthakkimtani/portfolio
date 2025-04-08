@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+
+const { title } = Astro.props;
+
+const getIconLink = (name: string) => {
+  const baseUrl = "https://cdn.simpleicons.org/";
+  const slug = name
+    .toLowerCase()
+    .replace(/\.| /g, (match) => (match === "." ? "dot" : ""));
+
+  return `${baseUrl}${slug}`;
+};
+---
+
+<div
+  class="flex flex-row items-center justify-center rounded-full bg-gray-200 px-3 py-2"
+>
+  <Image
+    src={getIconLink(title)}
+    alt={title}
+    width={16}
+    height={16}
+    class="mr-2"
+  />
+  <span class="text-sm">{title}</span>
+</div>
