@@ -17,15 +17,13 @@ const { projects } = projectContent.frontmatter;
   </p>
   <div class="w-full text-base leading-relaxed lg:w-2/3 lg:pl-16">
     {projects.map((project: Project) => <ProjectCard project={project} />)}
-    <div class="mt-10">
-      <a
-        href="https://github.com/sarthakkimtani/"
-        class="rounded-full border border-gray-700 px-4 py-2 text-lg text-gray-700 transition-all duration-200 hover:border-gray-900 hover:text-gray-900"
-        target="_blank"
-      >
-        All Projects
-        <Icon name="arrow-up-right" class="ml-1 inline-block text-gray-700" />
-      </a>
-    </div>
+    <a
+      href="https://github.com/sarthakkimtani/"
+      class="rounded-full border border-gray-700 px-4 py-2 text-lg text-gray-700 transition-all duration-200 hover:border-gray-900 hover:text-gray-900"
+      target="_blank"
+    >
+      All Projects
+      <Icon name="arrow-up-right" class="ml-1 inline-block text-gray-700" />
+    </a>
   </div>
 </section>
