@@ -13,15 +13,7 @@ const getIconLink = (name: string) => {
 };
 ---
 
-<div
-  class="flex flex-row items-center justify-center rounded-full bg-gray-200 px-3 py-2"
->
-  <Image
-    src={getIconLink(title)}
-    alt={title}
-    width={16}
-    height={16}
-    class="mr-2"
-  />
+<div class="flex flex-row items-center justify-center rounded-full bg-gray-200 px-3 py-2">
+  <Image src={getIconLink(title)} alt={title} width={16} height={16} class="mr-2" />
   <span class="text-sm">{title}</span>
 </div>

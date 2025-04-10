@@ -1,17 +1,8 @@
 ---
+import Section from "./Section.astro";
 import { Content as AboutContent } from "../content/about.md";
 ---
 
-<section
-  id="about"
-  class="mt-10 flex w-full flex-col p-10 lg:w-3/4 lg:flex-row"
->
-  <p
-    class="top-24 mb-6 w-full self-start text-lg font-semibold lg:sticky lg:mb-0 lg:w-1/3"
-  >
-    About
-  </p>
-  <div class="w-full text-base leading-relaxed text-gray-700 lg:w-2/3 lg:pl-16">
-    <AboutContent />
-  </div>
-</section>
+<Section id="about" title="About">
+  <AboutContent />
+</Section>

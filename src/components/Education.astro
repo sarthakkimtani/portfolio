@@ -1,33 +1,20 @@
 ---
-import * as educationContent from "../content/education.md";
+import Section from "./Section.astro";
 
+import * as educationContent from "../content/education.md";
 const { degrees } = educationContent.frontmatter;
 ---
 
-<section
-  id="education"
-  class="mt-10 flex w-full flex-col p-10 lg:w-3/4 lg:flex-row"
->
-  <p
-    class="top-24 mb-6 w-full self-start text-lg font-semibold lg:sticky lg:mb-0 lg:w-1/3"
-  >
-    Education
-  </p>
-  <div class="w-full text-base leading-relaxed lg:w-2/3 lg:pl-16">
-    {
-      degrees.map((degree: Degree) => (
-        <div class="mb-4 flex flex-col items-start">
-          <h4 class="mb-2 text-lg font-semibold text-gray-800">
-            {degree.title}
-          </h4>
-          <p class="text-base text-gray-500">{degree.university}</p>
-          <p class="text-base text-gray-500">{degree.date}</p>
-          <p class="my-2 text-base leading-relaxed text-gray-700">
-            {degree.description}
-          </p>
-          <div class="my-4 h-[1px] w-full bg-gray-300" />
-        </div>
-      ))
-    }
-  </div>
-</section>
+<Section id="education" title="Education">
+  {
+    degrees.map((degree: Degree) => (
+      <div class="mb-4 flex flex-col items-start">
+        <h4 class="mb-2 text-lg font-semibold text-gray-800">{degree.title}</h4>
+        <p class="text-base text-gray-500">{degree.university}</p>
+        <p class="text-base text-gray-500">{degree.date}</p>
+        <p class="my-2 text-base leading-relaxed text-gray-700">{degree.description}</p>
+        <div class="my-4 h-[1px] w-full bg-gray-300" />
+      </div>
+    ))
+  }
+</Section>
