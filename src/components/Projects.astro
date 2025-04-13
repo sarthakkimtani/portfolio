@@ -1,14 +1,15 @@
 ---
 import { Icon } from "astro-icon/components";
+
 import Section from "./Section.astro";
 import ProjectCard from "./ProjectCard.astro";
+import projectContent from "../content/projects.json";
 
-import * as projectContent from "../content/projects.md";
-const { projects } = projectContent.frontmatter;
+const { projects } = projectContent;
 ---
 
 <Section id="projects" title="Projects">
-  {projects.map((project: Project) => <ProjectCard project={project} />)}
+  {projects.map((project) => <ProjectCard project={project} />)}
   <a
     href="https://github.com/sarthakkimtani/"
     class="rounded-full border border-gray-700 px-4 py-2 text-lg text-gray-700 transition-all duration-200 hover:border-gray-900 hover:text-gray-900"

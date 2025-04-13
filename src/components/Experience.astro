@@ -1,13 +1,13 @@
 ---
 import Section from "./Section.astro";
+import experienceContent from "../content/experience.json";
 
-import * as experienceContent from "../content/experience.md";
-const { experience } = experienceContent.frontmatter;
+const { experience } = experienceContent;
 ---
 
 <Section id="experience" title="Experience">
   {
-    experience.map((exp: Experience) => (
+    experience.map((exp) => (
       <div class="mb-4 flex w-full flex-col items-start">
         <h4 class="mb-2 text-lg font-semibold text-gray-800">{exp.title}</h4>
         <p class="text-base text-gray-500">{exp.company}</p>

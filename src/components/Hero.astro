@@ -2,10 +2,10 @@
 import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 
-import * as heroContent from "../content/hero.md";
+import heroContent from "../content/hero.json";
 import Profile from "../assets/profile.jpg";
 
-const { location, email, currently, previously, intro } = heroContent.frontmatter;
+const { name, location, email, currently, previously, intro } = heroContent;
 ---
 
 <section
@@ -28,13 +28,13 @@ const { location, email, currently, previously, intro } = heroContent.frontmatte
     <div class="mt-14 flex flex-col text-base font-semibold">
       <p class="font-thin text-gray-400">CURRENTLY</p>
       <div class="mt-2 ml-2 text-black">
-        {currently.map((item: string) => <p set:html={item} />)}
+        {currently.map((item) => <p set:html={item} />)}
       </div>
     </div>
     <div class="mt-14 flex flex-col text-base font-semibold">
       <p class="font-thin text-gray-400">PREVIOUSLY</p>
       <div class="mt-2 ml-2 text-black">
-        {previously.map((item: string) => <p set:html={item} />)}
+        {previously.map((item) => <p set:html={item} />)}
       </div>
     </div>
   </div>
@@ -43,11 +43,11 @@ const { location, email, currently, previously, intro } = heroContent.frontmatte
       src={Profile}
       draggable={false}
       loading="eager"
-      alt="Sarthak Kimtani"
+      alt={name}
       class="h-44 w-44 rounded-[75px] lg:h-60 lg:w-60"
     />
     <h4 class="mt-14 text-center text-xl font-medium lg:w-3/4">
-      I'm Sarthak Kimtani — Software Engineer
+      I'm {name} — Software Engineer
       <span class="text-gray-400">{intro}</span>
     </h4>
   </div>

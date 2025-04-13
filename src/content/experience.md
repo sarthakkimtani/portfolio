@@ -1,7 +1,0 @@
----
-experience:
-  - title: "Web Development Intern"
-    company: "Upgradx"
-    date: "June 2023 — September 2023"
-    description: "Built responsive multi-page websites using React and Next.js, applying SSG and SSR to boost performance and SEO. Optimized load times by 30% enhancing user experience and retention. Gained hands-on experience with version control, collaborative workflows, and industry best practices like accessibility and cross-browser support."
----

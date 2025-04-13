@@ -1,6 +1,5 @@
----
-skills:
-  [
+{
+  "skills": [
     "Java",
     "Python",
     "C++",
@@ -23,6 +22,6 @@ skills:
     "Postman",
     "Jira",
     "Numpy",
-    "Pandas",
+    "Pandas"
   ]
----
+}

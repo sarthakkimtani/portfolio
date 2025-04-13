@@ -1,13 +1,13 @@
 ---
 import Section from "./Section.astro";
+import educationContent from "../content/education.json";
 
-import * as educationContent from "../content/education.md";
-const { degrees } = educationContent.frontmatter;
+const { degrees } = educationContent;
 ---
 
 <Section id="education" title="Education">
   {
-    degrees.map((degree: Degree) => (
+    degrees.map((degree) => (
       <div class="mb-4 flex flex-col items-start">
         <h4 class="mb-2 text-lg font-semibold text-gray-800">{degree.title}</h4>
         <p class="text-base text-gray-500">{degree.university}</p>

@@ -1,8 +1,8 @@
 ---
 import Section from "./Section.astro";
-import { Content as AboutContent } from "../content/about.md";
+import aboutContent from "../content/about.json";
 ---
 
 <Section id="about" title="About">
-  <AboutContent />
+  <div set:html={aboutContent.content} />
 </Section>
