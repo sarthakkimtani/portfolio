@@ -67,6 +67,6 @@ Deploy it to your favorite hosting provider (Netlify, Vercel, GitHub Pages, etc.
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/sarthakkimtani/portfolio/issues).
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License.
