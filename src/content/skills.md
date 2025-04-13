@@ -1,0 +1,28 @@
+---
+skills:
+  [
+    "Java",
+    "Python",
+    "C++",
+    "JavaScript",
+    "TypeScript",
+    "Dart",
+    "React",
+    "Next.js",
+    "Express",
+    "Flutter",
+    "Node.js",
+    "SQLite",
+    "PostgreSQL",
+    "Redis",
+    "MongoDB",
+    "MySQL",
+    "Firebase",
+    "Git",
+    "Docker",
+    "Postman",
+    "Jira",
+    "Numpy",
+    "Pandas",
+  ]
+---

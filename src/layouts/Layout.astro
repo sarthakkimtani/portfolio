@@ -1,6 +1,7 @@
 ---
 import Grid from "../components/Grid.astro";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 import "@fontsource-variable/figtree";
 
 const { title } = Astro.props;
@@ -29,10 +30,13 @@ const { title } = Astro.props;
     <meta name="twitter:description" content="Portfolio of Sarthak Kimtani" />
     <meta name="twitter:image" content="/twitter-card.jpg" />
   </head>
-  <body class="w-full overflow-x-hidden">
-    <Grid left={true} />
-    <Grid left={false} />
+  <body class="relative w-full overflow-x-hidden">
+    <Grid left />
+    <Grid />
     <Navbar />
     <slot />
+    <Footer />
+    <Grid left bottom />
+    <Grid bottom />
   </body>
 </html>

@@ -1,14 +1,23 @@
 ---
-const { left } = Astro.props;
+const { left, bottom } = Astro.props;
+
+const gradientSide = left
+  ? bottom
+    ? "bg-gradient-to-tr"
+    : "bg-gradient-to-tl"
+  : bottom
+    ? "bg-gradient-to-tl"
+    : "bg-gradient-to-tr";
+
+const gradientColor = bottom
+  ? "from-transparent from-20% to-40% to-white"
+  : "from-white from-40% to-100% to-transparent";
 ---
 
 <div
-  class={`absolute top-0 ${left ? "left-0" : "right-0"} w-1/2 h-auto bg-neutral-300 z-[-10] pointer-events-none`}
+  class={`absolute ${bottom ? "bottom-0" : "top-0"} ${left ? "left-0" : "right-0"} w-1/2 h-auto bg-neutral-300 z-[-10] pointer-events-none`}
 >
-  <div
-    class={`absolute inset-0 z-30 w-full h-full ${left ? "bg-gradient-to-tl" : "bg-gradient-to-tr"} from-white from-50% via-90% to-100% via-transparent to-transparent`}
-  >
-  </div>
+  <div class={`absolute z-30 w-full h-full ${gradientSide} ${gradientColor}`}></div>
   <div
     class="flex h-full w-full flex-col divide-y divide-dashed divide-neutral-300 border-t border-l border-neutral-300"
   >

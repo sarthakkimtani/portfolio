@@ -1,0 +1,12 @@
+---
+email: sarthakkimtani123@gmail.com
+socials:
+  - title: GitHub
+    url: https://github.com/sarthakkimtani/
+  - title: Linkedin
+    url: https://www.linkedin.com/in/sarthak-kimtani/
+  - title: Peerlist
+    url: https://peerlist.io/sarthakkimtani/
+  - title: X
+    url: https://x.com/sarthakkimtani/
+---

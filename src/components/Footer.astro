@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import NotAI from "../assets/not-ai.svg";
+---
+
+<footer
+  class="mx-auto mt-20 flex w-3/4 flex-row items-center justify-between border-t border-gray-300 px-5 pt-10 pb-56"
+>
+  <p class="text-md font-medium text-gray-600">
+    Sarthak Kimtani &copy; {new Date().getFullYear()}
+  </p>
+  <Image src={NotAI} alt="Developed by Human, not AI" draggable={false} />
+</footer>

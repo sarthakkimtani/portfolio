@@ -1,0 +1,14 @@
+---
+import Section from "./Section.astro";
+import Skill from "./Skill.astro";
+
+import * as skillsContent from "../content/skills.md";
+
+const { skills } = skillsContent.frontmatter;
+---
+
+<Section title="Technical Skills" id="skills">
+  <div class="mb-2 flex flex-wrap gap-2">
+    {skills.map((skill: string) => <Skill title={skill} />)}
+  </div>
+</Section>
