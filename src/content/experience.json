@@ -1,10 +1,23 @@
 {
   "experience": [
     {
+      "title": "Flutter Intern",
+      "company": "Smollan",
+      "date": "April 2025 - Present",
+      "description": [
+        "Contributed to a dynamic Flutter application, implementing new features and improving existing UI flows in Android.",
+        "Implemented and optimized features using Provider for state management, improving app responsiveness and maintainability."
+      ]
+    },
+    {
       "title": "Web Development Intern",
       "company": "Upgradx",
       "date": "June 2023 — September 2023",
-      "description": "Built responsive multi-page websites using React and Next.js, applying SSG and SSR to boost performance and SEO. Optimized load times by 30% enhancing user experience and retention. Gained hands-on experience with version control, collaborative workflows, and industry best practices like accessibility and cross-browser support."
+      "description": [
+        "Built responsive multi-page websites using React and Next.js, applying SSG and SSR to boost performance and SEO.",
+        "Optimized load times by 30% enhancing user experience and retention.",
+        "Gained hands-on experience with version control, collaborative workflows, and industry best practices like accessibility and cross-browser support."
+      ]
     }
   ]
 }
