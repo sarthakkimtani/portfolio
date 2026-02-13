@@ -3,9 +3,8 @@
   "location": "New Delhi, India",
   "email": "sarthakkimtani123@gmail.com",
   "currently": [
-    "Flutter Intern @ Smollan",
-    "Building <a href='https://github.com/sarthakkimtani/synapse-ai' class='underline cursor-pointer'>Synapse</a> & <a href='https://github.com/sarthakkimtani/career-catalyst' class='underline cursor-pointer'>CareerCatalyst</a>"
+    "Building <a href='https://github.com/sarthakkimtani/lumyn' class='underline cursor-pointer'>Lumyn</a>"
   ],
-  "previously": ["Frontend Intern @ Upgradx"],
+  "previously": ["Mobile Intern @ Smollan", "Frontend Intern @ Upgradx"],
   "intro": "focused on crafting seamless and impactful digital products."
 }
